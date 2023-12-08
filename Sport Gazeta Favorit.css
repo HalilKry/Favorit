@@ -1,0 +1,59 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizimi i kryetitullit */
+#pjesaheaderit {
+    background-color: rgb(137, 212, 24);
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+#logo p {
+    text-align: left;
+}
+
+/* Stilizimi i navigimit */
+#navigimi ul {
+    text-align: left;
+}
+
+#navigimi ul li {
+    display: inline;
+    margin-left: 50px;
+}
+
+#navigimi ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Stilizimi i fushës së kërkimit */
+input[type="text"] {
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.butoni_bg {
+    background-color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Stilizimi i zonës së fotos */
+#pjesafoto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Mfot img {
+    width: 30%;
+    height: auto;
+}

@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.headeri{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    color: rgba(0, 174, 255, 0.452);
+    font-weight: bold;
+    align-items: center;
+}
+.gazeta :hover{
+    cursor: pointer;
+}
+ul{
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+ul li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 3px solid red;
+}

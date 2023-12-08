@@ -1,0 +1,54 @@
+* {margin: 0; padding: 0;}
+body {background-color: rgba(red, green, blue, alpha);}
+#Kontaineri {max-width: 900px;
+            border: 8px rgba(red, green, blue, alpha) dashed;
+            margin: auto;
+            margin-top: 10%;
+            background: whitesmoke;
+            }
+
+.kontenti {max-width: 550px;
+           border: 8px blue solid;
+            margin: auto;
+            background: whitesmoke;
+            padding: 50px 50px;
+            background-color: wheat;
+            margin: 40px auto 40px auto;}
+        p  {color: blue;
+            font-family: 'Courier New';
+            font-size: 18pt;
+            text-align: center;}
+        dt {color: burlywood;
+            font-family: 'Lucida Sans';
+            font-size: 14pt;
+            font-weight: bolder;}
+        dd {color: black;
+            font-family: 'Gill Sans MT';
+            font-size: 13pt;
+            padding-left: 10px;}
+
+            * {margin: 0;
+                padding: 0;}
+                body {display: flex; 
+                justify-content: center;
+                font-family:'Microsoft JhengHei Light';}
+                #mbajtsiW {display:flex;
+                flex-direction: column
+                justify-content: center;
+                width: 80%;
+                border: 1px solid blue; 
+                flex-wrap: wrap;}
+                .artikulli { display: flex; 
+                flex:0 0 100px; 
+                align-items:center;
+                justify-content: center; 
+                height: 80px;
+                border: 1px solid rebeccapurple; 
+                margin: 5px;
+                font-size: 16pt; 
+                font-weight: 500; 
+                color: aliceblue;
+                }
+
+          
+                
