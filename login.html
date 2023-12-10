@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+       <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div>
+        <form id="loginForm" onsubmit="validateFormAndRedirect(event)">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <button type="submit">Login</button>
+            <a href="signup.html">Sign Up</a>
+        </form>
+    </div>
+
+    <script>
+        function validateFormAndRedirect(event) {
+            event.preventDefault(); 
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordRegex = /^(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}$/;
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (emailRegex.test(email) && passwordRegex.test(password)) {
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid email or password. Please check your input.');
+            }
+        }
+    </script>
+</body>
+</html>

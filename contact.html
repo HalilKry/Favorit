@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="FAVORIT.png" class="logo" />
+
+        <div class="navbar">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <button class="btn"><a href="login.html">LOGIN</a></button>
+      </div>
+
+
+      <div class="form">
+        <form method="post">
+            <input type="text" placeholder="Name" id="name" autocomplete="off">
+            <input type="text" placeholder="Email" id="email" autocomplete="off">
+            <input type="text" placeholder="Subject" id="subject" autocomplete="off">
+            <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <button id="btn">Send</button>
+        </form>
+      </div>
+
+      <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e) {
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var name = document.getElementById('email').value;
+            var name = document.getElementById('subject').value;
+            var name = document.getElementById('message').value;
+            console.log('hi');
+            var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' 
+            +subject + '<bt/> message: '+ message; 
+        })
+      </script>
+      
+
+      
+    </div>
+  </body>
+</html>

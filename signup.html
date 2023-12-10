@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div>
+        <form id="signupForm" onsubmit="validateFormAndRedirect(event)">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+
+            <button type="submit">Sign Up</button>
+            <a href="login.html">Login</a>
+        </form>
+    </div>
+
+    <script>
+        function validateFormAndRedirect(event) {
+            event.preventDefault();
+
+            const nameRegex = /^[A-Za-z]+$/; 
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+            const passwordRegex = /.{8,}/; // At least 8 characters
+
+            const name = document.getElementById('name').value.trim();
+            const surname = document.getElementById('surname').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (nameRegex.test(name) && nameRegex.test(surname) && emailRegex.test(email) && passwordRegex.test(password) && password === confirmPassword) {
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid name, surname, email, password, or password confirmation. Please check your input.');
+            }
+        }
+    </script>
+</body>
+</html>

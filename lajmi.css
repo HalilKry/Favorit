@@ -70,27 +70,3 @@
 .btn a:hover {
     color: #000;
 }
-
-
-
-.lajmet{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.lajmi-foto{
-    width: 300px;
-}
-
-.lajmi{
-    
-    margin: 10px;
-    width: 300px;
-    border: 2px solid gray;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}

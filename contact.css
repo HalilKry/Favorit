@@ -71,26 +71,22 @@
     color: #000;
 }
 
-
-
-.lajmet{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.form {
+    width: 500px;
+    padding: 6px;
 }
 
-.lajmi-foto{
-    width: 300px;
+input,
+textarea {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    margin: 6px 0px;
 }
 
-.lajmi{
-    
-    margin: 10px;
-    width: 300px;
-    border: 2px solid gray;
-}
-
-a{
-    text-decoration: none;
-    color: black;
+#btn {
+    width: 150px;
+    padding: 6px;
+    cursor: pointer;
 }
